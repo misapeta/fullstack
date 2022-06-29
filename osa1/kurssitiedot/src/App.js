@@ -15,6 +15,7 @@ const App = () => {
     exercises: 14
   }
 ]
+
 }
   const Header = (props) => {
     console.log(props)
@@ -42,7 +43,7 @@ const App = () => {
     let sum = 0
     let exer = course.parts
     exer.forEach(value => sum += value.exercises)
-    console.log(sum)
+    console.log("Total", sum)
     return (
       <div>
         <p>Number of exercises: {sum}</p>
